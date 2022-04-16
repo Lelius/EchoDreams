@@ -2,7 +2,9 @@
     <string name="app_name">EchoDreams</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">string - it\'s no good idea</string>
-    <string name="recognitionProcessToggleButton">Recognition process</string>
-    <string name="fixingEntryToggleButton">Fixing entry</string>
+    <string name="recognitionProcessOnToggleButton">Recognition process On</string>
+    <string name="recognitionProcessOffToggleButton">Recognition process Off</string>
+    <string name="fixingEntryOnToggleButton">Fixing entry On</string>
+    <string name="fixingEntryOffToggleButton">Fixing entry Off</string>
     <string name="goToEntriesButton">Entries</string>
 </resources>

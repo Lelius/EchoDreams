@@ -13,10 +13,10 @@
         android:layout_height="0dp"
         android:name="com.example.echodreams.IndicatorFragment"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/controlFragmentInMain"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_weight="0.6"
+        app:layout_constraintBottom_toTopOf="@id/controlFragmentInMain"
+        app:layout_constraintVertical_weight="0.6"
         />
 
     <androidx.fragment.app.FragmentContainerView
@@ -24,11 +24,11 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:name="com.example.echodreams.ControlFragment"
-        app:layout_constraintLeft_toRightOf="@id/indicatorFragmentInMain"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_weight="0.4"
+        app:layout_constraintTop_toBottomOf="@id/indicatorFragmentInMain"
+        app:layout_constraintVertical_weight="0.4"
         />
 
 

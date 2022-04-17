@@ -11,6 +11,7 @@
         android:id="@+id/recognitionProcessToggleLinearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:weightSum="10"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -19,31 +20,32 @@
         <View
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_weight="0.35"></View>
+            android:layout_weight="2"></View>
 
         <ToggleButton
             android:id="@+id/recognitionProcessToggleButton"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:padding="8dp"
-            android:layout_weight="0.3"
+            android:layout_weight="6"
             android:textOn="@string/recognitionProcessOnToggleButton"
             android:textOff="@string/recognitionProcessOffToggleButton"
             app:layout_constraintBottom_toTopOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintRight_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <View
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_weight="0.35"></View>
+            android:layout_weight="2"></View>
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/fixingEntryToggleLinearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:weightSum="10"
         app:layout_constraintTop_toBottomOf="@id/recognitionProcessToggleLinearLayout"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -52,14 +54,14 @@
     <View
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_weight="0.35"></View>
+        android:layout_weight="2"></View>
 
     <ToggleButton
         android:id="@+id/fixingEntryToggleButton"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:padding="8dp"
-        android:layout_weight="0.3"
+        android:layout_weight="6"
         android:textOn="@string/fixingEntryOnToggleButton"
         android:textOff="@string/fixingEntryOffToggleButton"
         app:layout_constraintBottom_toTopOf="@id/goToEntriesButton"
@@ -70,13 +72,14 @@
         <View
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_weight="0.35"></View>
+            android:layout_weight="2"></View>
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/goToEntriesLinearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:weightSum="10"
         app:layout_constraintTop_toBottomOf="@id/fixingEntryToggleLinearLayout"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -85,14 +88,14 @@
     <View
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_weight="0.35"></View>
+        android:layout_weight="2"></View>
 
     <Button
         android:id="@+id/goToEntriesButton"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:padding="8dp"
-        android:layout_weight="0.3"
+        android:layout_weight="6"
         android:text="@string/goToEntriesButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -102,7 +105,7 @@
         <View
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_weight="0.35"></View>
+            android:layout_weight="2"></View>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
